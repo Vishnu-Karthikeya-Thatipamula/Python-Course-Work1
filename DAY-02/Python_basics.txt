@@ -1,0 +1,21 @@
+Tokens: It is smallest unit of a program. It has 5 types:
+Identifier
+operators
+literals
+Keywords
+punctuations
+Comments: 1.Single Line comment (#)
+          2.Multi Line comment(''' ***** ''')
+                      
+Identifier:
+1.contains uppercase, lowercase, digits,_.
+2.no special char.
+3.starts with uppercase, lowercase,_ .
+4.Python is Case sensitive. 
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 
+'await', 'break', 'class', 'continue', 'def', 
+'del', 'elif', 'else', 'except', 'finally', 'for', 
+'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 
+'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 
+'try', 'while', 'with', 'yield']
+35

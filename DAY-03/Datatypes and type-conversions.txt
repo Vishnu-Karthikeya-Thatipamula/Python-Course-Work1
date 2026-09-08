@@ -1,0 +1,222 @@
+#Data Types
+#int, float, complex
+Program ex:
+a = 12
+type(a) (Used in certain count of whole numbers)
+<class 'int'>
+b= 13.4
+type(b) (Used in more specific involver decimals)
+<class 'float'>
+c= 12 +4j
+type(c) (Used at uncertain calculations)
+<class 'complex'>
+#str, list, Tuple
+str: collection chars enclosed blw ' ' or " ".
+Mutable and un mutable str : 
+Mutable str allow changing a value at particular object reference after declaration.
+ex:
+s = 'Codegnan'
+id(s)
+1904716291376
+s +='Python'
+s
+'CodegnanPython'
+id(s)
+1904679599664
+str allow duplictes
+s = 'aaaaaaa'
+type(s)
+#list is collecion of elements enclosed blw '[]'. list is mutable.list allows duplicates, dynamically shapes, allows heterogenous datatypes. It is also Ordered.
+ex:
+l = [1,2,3,4,5,5,6,]
+type(l)
+<class 'list'>
+id(l)
+1904713561728
+l.append(12)
+l
+[1, 2, 3, 4, 5, 5, 6, 12]
+id(l)
+1904713561728
+l = [1,12.3, 'str', [1,23]]
+l
+[1, 12.3, 'str', [1, 23]]
+#Tuple is a collection of object enclosed '()'. 
+It is immutable, 
+it is ordered, 
+It allows duplicates,
+It allows heterogenous object,
+It is fix in size.
+t = (l,l,l,l,l)
+t
+([1, 12.3, 'str', [1, 23]], [1, 12.3, 'str', [1, 23]], [1, 12.3, 'str', [1, 23]], [1, 12.3, 'str', [1, 23]], [1, 12.3, 'str', [1, 23]])
+t=(1,1,1,1)
+t
+(1, 1, 1, 1)
+t =( 1, 1.5, 'Number')
+t
+(1, 1.5, 'Number')
+
+#set is a collection elements enclosed between '{}'.
+It is mutable,
+Not allows duplicates,
+it is dynamically resized,
+It allows heterogenous elements to some extent.
+it is unordered.
+ex:
+a={ 1,12.3, "set"}
+a
+{1, 'set', 12.3}
+se = {80, 20, 70, 14, 24,25, 78}
+id(se)
+1904715769312
+se
+{80, 20, 70, 25, 24, 78, 14}
+#frozenset: A set which is not Mutable.
+ex:
+T = frozenset(["Fare", "Well"])
+T
+frozenset({'Well', 'Fare'})
+type(T)
+<class 'frozenset'>
+#dictionary is the collection Key and value pairs. 
+It is mutable, doesnot allow duplicates.
+ex:
+student = {
+"name": "Rohit",
+"age": 21,
+"course": "Python"
+}
+type(student)
+<class 'dict'>
+E = { "name" : "java",
+      "workingdays" : 45,
+      "assement": "grandtest"}
+
+E
+{'name': 'java', 'workingdays': 45, 'assement': 'grandtest'}
+
+#Boolean is is variable which only works with True or false or 0 and 1.
+ex:
+Log_in = true
+Log_out = false
+type(Log_in)
+<class 'bool'>
+
+#None declares an empty datatype.
+ex:
+tracking_id = None
+type(tracking_id)
+<class 'NoneType'>
+
+#Type conversion: 
+ex: #case 'int'
+a = 10
+float(a) #conversion into float
+10.0
+str(a)  #conversion into str
+'10'
+complex(a) #conversion into complex
+(10+0j)
+bool(a) #conversion into Boolean
+True
+list(a) #conversion into list
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    list(a) #conversion into list
+TypeError: 'int' object is not iterable
+set(a) #conversion into set 
+Traceback (most recent call last):
+  File "<pyshell#66>", line 1, in <module>
+    set(a) #conversion into set
+TypeError: 'set' object is not callable
+dict(a) #conversion into dictionary
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    dict(a) #conversion into dictionary
+TypeError: 'int' object is not iterable
+#case "float"
+b= 10.3
+int(b) #conversion into int
+10
+str(b)  #conversion into str
+'10.3'
+complex(b) #conversion into complex
+(10.3+0j)
+bool(b) #conversion into Boolean
+True
+list(b) #conversion into list
+Traceback (most recent call last):
+  File "<pyshell#73>", line 1, in <module>
+    list(b) #conversion into list
+TypeError: 'float' object is not iterable
+set(b) #conversion into set
+Traceback (most recent call last):
+  File "<pyshell#74>", line 1, in <module>
+    set(b) #conversion into set
+TypeError: 'set' object is not callable
+dict(b) #conversion into dictionary
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in <module>
+    dict(b) #conversion into dictionary
+TypeError: 'float' object is not iterable
+
+#case "complex"
+c = 30 + 5j
+int(c) #conversion into int
+Traceback (most recent call last):
+  File "<pyshell#78>", line 1, in <module>
+    int(c) #conversion into int
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+float(c) #conversion into float
+#conversion into float
+Traceback (most recent call last):
+  File "<pyshell#79>", line 1, in <module>
+    float(c) #conversion into float
+TypeError: float() argument must be a string or a real number, not 'complex' 
+boolean(c) #conversion into Boolean
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    boolean(c) #conversion into Boolean
+NameError: name 'boolean' is not defined
+str(c) #conversion into string
+'(30+5j)'
+list(c) # conversion into list
+Traceback (most recent call last):
+  File "<pyshell#82>", line 1, in <module>
+    list(c) # conversion into list
+TypeError: 'complex' object is not iterable
+dict(c) #conversion into dictionary
+Traceback (most recent call last):
+  File "<pyshell#83>", line 1, in <module>
+    dict(c) #conversion into dictionary
+TypeError: 'complex' object is not iterable
+set(a) #conversion into set 
+Traceback (most recent call last):
+  File "<pyshell#84>", line 1, in <module>
+    set(a) #conversion into set
+TypeError: 'set' object is not callable
+ 
+#case "str"
+s = " I am"
+int(s) #conversion into int
+float(s) #conversion into float
+ 
+boolean(s) #conversion into Boolean
+
+list(c) # conversion into list
+Traceback (most recent call last):
+  File "<pyshell#82>", line 1, in <module>
+    list(c) # conversion into list
+TypeError: 'complex' object is not iterable
+dict(c) #conversion into dictionary
+Traceback (most recent call last):
+  File "<pyshell#83>", line 1, in <module>
+    dict(c) #conversion into dictionary
+TypeError: 'complex' object is not iterable
+set(a) #conversion into set 
+Traceback (most recent call last):
+  File "<pyshell#84>", line 1, in <module>
+    set(a) #conversion into set
+TypeError: 'set' object is not callable
+
