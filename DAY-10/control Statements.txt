@@ -1,0 +1,67 @@
+Conditional Statements
+------------------------
+1.simpleif is single condition single action
+            Syntax: if cond1:
+                       #stms
+example: #if-statement example:
+sales = int(input("Enter the sales amount: "))
+if sales > 1000:
+    print("You are the best seller!")
+O/p: Case I
+   Enter the sales amount: 2000
+   You are the best seller!
+   Case II
+   Enter the sales amount: 1000
+eli_acc = eval(input("Eligible Account: "))
+ver_Meta = eval(input("Verify Meta: "))
+if eli_acc and ver_Meta:
+    print("You are eligible for the account!")
+O/P: Case I 
+     Eligible Account: True
+    Verify Meta: True
+rain_status = eval(input("Is it raining? (True/False): "))
+if rain_status:
+    print("Apply for a surge!(raincharges)")    
+O/p: Case I 
+     Is it raining? (True/False): True
+    Apply for a surge!(raincharges)
+    Case II
+    Is it raining? (True/False): False
+    
+2.if else is single condition 2 action
+            Syntax: if cond1:
+                       #stms1
+                    else:
+                       #stms2
+example: #if-else statement example:
+#if-else statement
+usernmame = input("Enter your username: ")
+password = input("Enter your password: ")
+if usernmame == "admin" and password == "admin123":
+    print("Welcome admin!") 
+else:
+    print("Invalid username or password. Access denied.")
+    O/p: Case I
+    Enter your username: admin
+    Enter your password: admin123
+    Welcome admin!
+          Case II 
+    Enter your username: admim
+    Enter your password: admin345
+    Invalid username or password. Access denied.
+
+3.elif ladder is 2 conditons elif cond 1: , if cond2 , else with 3 actions
+            Syntax: elif cond1:
+                         #stms1 
+                    if   cond2:
+                        #stms2 
+                    else:
+                        #stms3
+
+4.Nested if conditional Statements containing conditional Statements with there respective no of actions.
+            Syntax: if cond1:
+                       if cond2:
+                          #stmst1
+                       else:
+                          #stms2 
+                    

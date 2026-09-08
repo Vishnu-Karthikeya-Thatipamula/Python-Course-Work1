@@ -1,0 +1,6 @@
+print(f"PERSONAL DETAILS------------\n")
+print(f"Name: Vishnu Karthikeya \nAge: 23 \ncity: Hyderabad \nCarrer Goal: Python Full Stack developer or Data Analyst or front End or BackEnd developer\n") 
+print(f"EDUCATION DETAILS------------\n")
+print(f"College Name: KITS(S) \nBranch:CSE \nYear of Study:2021-25 \nUniversity Name:JNTUH\n")
+print(f"TIMINGS:CODEGNAN-----------\n")
+print(f"09:00 AM - Python \n11:00 AM - SoftSkills \n4:00 PM - Practice session\n")
