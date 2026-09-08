@@ -1,0 +1,292 @@
+#string
+#string operations : 1 cancatenation, indexing, slicing.
+S = 'Codegnan'
+S
+'Codegnan'
+# cancatenation
+a= 'Python'
+b= 'Programming'
+a +b
+'PythonProgramming'
+#Repeation
+a*10
+'PythonPythonPythonPythonPythonPythonPythonPythonPythonPython'
+#How to find the type
+type(s)
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    type(s)
+NameError: name 's' is not defined. Did you mean: 'S'?
+type(S)
+<class 'str'>
+#indexing
+'''
+01234567 +ve indexing
+codegnan
+87654321 -ve indexing
+'''
+'\n01234567 +ve indexing\ncodegnan\n87654321 -ve indexing\n'
+S = 'codegnan'
+S
+'codegnan'
+S[7]
+'n'
+S[-8]
+'c'
+S[-5]
+'e'
+S[-4]
+'g'
+#slicing:
+Names
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    Names
+NameError: name 'Names' is not defined
+Names = "Kalyani vishnupriya Lakshmi nounsri lohitha usharani"
+Names
+'Kalyani vishnupriya Lakshmi nounsri lohitha usharani'
+Names[:8]
+'Kalyani '
+Names[:7]
+'Kalyani'
+Names[8:11]
+'vis'
+Names[8:18]
+'vishnupriy'
+Names[8:19]
+'vishnupriya'
+Names[:9]
+'Kalyani v'
+Names[:-9]
+'Kalyani vishnupriya Lakshmi nounsri lohitha'
+Names[-9:]
+' usharani'
+Names[-8:]
+'usharani'
+Names[-8:-17]
+''
+Names[-17:-8]
+' lohitha '
+#membership operations
+'a' in Names
+True
+'Y' in Names
+False
+'nounsri' in Names
+True
+'Teja' in not Names
+SyntaxError: invalid syntax
+'Teja' not in Names
+True
+
+#String methods
+len(Names)
+52
+ord('a')
+97
+ord('e')
+101
+ord('e')
+101
+ord('i')
+105
+ord("o")
+111
+ord('u")
+    
+SyntaxError: unterminated string literal (detected at line 1)
+ord("u")
+    
+117
+ord("v")
+    
+118
+ord("g")
+    
+103
+shr(100)
+    
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    shr(100)
+NameError: name 'shr' is not defined. Did you mean: 'chr'?
+chr(100)
+    
+'d'
+chr(150)
+    
+'\x96'
+ord(10)
+    
+Traceback (most recent call last):
+  File "<pyshell#62>", line 1, in <module>
+    ord(10)
+TypeError: ord() expected string of length 1, but int found
+chr(10)
+    
+'\n'
+chr(5)
+    
+'\x05'
+chr(50)
+    
+'2'
+chr(35)
+    
+'#'
+sorted(names)
+    
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    sorted(names)
+NameError: name 'names' is not defined. Did you mean: 'Names'?
+sorted(Names)
+    
+[' ', ' ', ' ', ' ', ' ', 'K', 'L', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'h', 'h', 'h', 'h', 'h', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'k', 'l', 'l', 'm', 'n', 'n', 'n', 'n', 'n', 'o', 'o', 'p', 'r', 'r', 'r', 's', 's', 's', 's', 't', 'u', 'u', 'u', 'v', 'y', 'y']
+Max(Names)
+    
+Traceback (most recent call last):
+  File "<pyshell#69>", line 1, in <module>
+    Max(Names)
+NameError: name 'Max' is not defined. Did you mean: 'max'?
+max(Names)
+    
+'y'
+min(Names)
+    
+' '
+
+
+#Case conversion Methods
+s= 'python Programming Languge'
+s.upper()
+    
+'PYTHON PROGRAMMING LANGUGE'
+s.lower()
+    
+'python programming languge'
+s.swapcase()
+    
+'PYTHON pROGRAMMING lANGUGE'
+s.capitalize()
+    
+'Python programming languge'
+s.title()
+    
+'Python Programming Languge'
+
+#Alignment method()
+    
+s
+    
+'python Programming Languge'
+s.center(50,"-")
+    
+'------------python Programming Languge------------'
+s.ljust(50,"-")
+    
+'python Programming Languge------------------------'
+s.rjust(50,'-')
+    
+'------------------------python Programming Languge'
+#Z-fill
+    
+'123'.zfill(4)
+    
+'0123'
+'123'.zfill(2)
+    
+'123'
+'5'.zfill(2)
+    
+'05'
+'45687259'.zfill(2)
+    
+'45687259'
+'45687259'.zfill(10)
+    
+'0045687259'
+
+
+#search and find methods
+    
+s
+    
+'python Programming Languge'
+s.find('p')
+    
+0
+s.rfind('a')
+    
+20
+s.lfind('g')
+    
+Traceback (most recent call last):
+  File "<pyshell#96>", line 1, in <module>
+    s.lfind('g')
+AttributeError: 'str' object has no attribute 'lfind'. Did you mean: 'find'?
+s.find('z')
+    
+-1
+s.find("a")
+    
+12
+s.index("a")
+    
+12
+s.rindex("a")
+    
+20
+s.index("z")
+    
+Traceback (most recent call last):
+  File "<pyshell#101>", line 1, in <module>
+    s.index("z")
+ValueError: substring not found
+s.count('n')
+    
+3
+s.count('h')
+    
+1
+s.count('l")
+        
+SyntaxError: unterminated string literal (detected at line 1)
+s.count('l')
+        
+0
+#Replace and Modify
+        
+s
+        
+'python Programming Languge'
+s.replace("O", "1")
+        
+'python Programming Languge'
+s.replace('o','1')
+        
+'pyth1n Pr1gramming Languge'
+s.replace('Python','java')
+        
+'python Programming Languge'
+s.replace('Python','java')
+        
+'python Programming Languge'
+s.replace('python','java')
+        
+'java Programming Languge'
+s.maketrans('aeiou','#$%^&')
+        
+{97: 35, 101: 36, 105: 37, 111: 94, 117: 38}
+s.translate(s.maketrans('aeiou','#$%^&'))
+        
+'pyth^n Pr^gr#mm%ng L#ng&g$'
+text = "Hello 🙂"
+        
+text.encode()
+        
+b'Hello \xf0\x9f\x99\x82'
+b'Hello \xf0\x9f\x99\x82'.decode()
+        
+'Hello 🙂'

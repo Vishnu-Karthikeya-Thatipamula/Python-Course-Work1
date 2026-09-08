@@ -1,0 +1,18 @@
+Application: Visual Code Editor:
+integer input: 1.Editors terminal takes input type
+ integer when the editor runs any code which has a integer specified as input.
+2. To connect to the external software like Github the application has window redirected to web asking the verification pin.
+Float input: Editors terminal takes input type 
+ float when the editor runs any code which has a float specified as input. 
+complex input: 
+
+string: Code written in the editor, E-mail used to login, inputs in the 
+         search engine of the Visual Code Studio, Terminal commands.
+
+Lists: A folder opened by the Visual Code Studio which has a list of items.
+
+Tuple: 
+
+set: The number of editor tabs open which are not in a order and mutable.
+
+Dictionary : 
