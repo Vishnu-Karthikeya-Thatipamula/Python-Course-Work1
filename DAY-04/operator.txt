@@ -1,0 +1,195 @@
+#Python Operators:
+'''
+1.Arthemic
+2.comparision
+3.Assignment
+4.relational
+5.bitwise
+6.membership
+7.Identity
+'''
+----------------#Arthemetic operators
+a=10
+b=5
+a+b
+15
+a-b
+5
+a*5
+50
+a/2
+5.0
+a**2
+100
+a**3
+1000
+9/2
+4.5
+9//2
+4
+10.5//2
+5.0
+12%2
+0
+a%2
+0
+11%2
+1
+----------------#Comparision 
+a
+10
+b
+5
+a<b
+False
+a>b
+True
+a<=b
+False
+a>+b
+True
+a>=10
+True
+a ++ b
+15
+a!=b
+True
+#--------------Assignment 
+a = 20
+a= a +10
+a
+30
+a = a + 20
+a
+50
+a += 10
+a
+60
+a *= 10
+a
+600
+a //=2
+a
+300
+a%=3
+a
+0
+a += 1
+a
+1
+a -= 1
+a
+0
+#--------------Relational Operators
+email = True
+password = False
+email and password
+False
+login = True
+Login = False
+display_prod = True
+Login or display_prod
+True
+'s' not in 'aeiou'
+True
+'s' is 'aeiou'
+False
+7 % 2 == 0 and 3 % 2 == 0
+False
+6 % 2 == 0 and 3 % 2 == 0
+False
+6 % 2 == 0 or 3 % 2 == 0
+True
+3 % 2 == 0
+False
+not(3 % 2) == 0
+True
+#----------------Membership operators
+s= 'Python Programming'
+'Pyth' in s
+True
+'Java' in s
+False
+'a' in s
+True
+'C++' not in s
+True
+'Program' not in s
+False
+1 = [1,2,3,4]
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+L = [1,2,3,4]
+3 in L
+True
+9 not in s
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    9 not in s
+TypeError: 'in <string>' requires string as left operand, not int
+9 not in L
+True
+t = {50, 60, 70, 90, 100}
+10 in t
+False
+50 in t
+True
+70 not in t
+False
+data = {'name':'dinesh', 'batch':65 , 'course' : 'pfs'}
+name in data
+Traceback (most recent call last):
+  File "<pyshell#87>", line 1, in <module>
+    name in data
+NameError: name 'name' is not defined
+'name' in data
+True
+dinesh in data
+Traceback (most recent call last):
+  File "<pyshell#89>", line 1, in <module>
+    dinesh in data
+NameError: name 'dinesh' is not defined
+# membership operation will not work values in dictionary
+l = [1,5,4,6,8,9,9,5]
+5 in l
+True
+5 not in l
+False
+9 in l
+True
+7 in l
+False
+8 in l
+True
+8 not in l
+False
+2 in l
+False
+#---------------identity operator
+m = [1,2,3,4]
+l= [1,2,3,4]
+m = l
+id(m) == id(l)
+True
+l is m
+True
+n = [1, 2, 3, 4]
+m = n
+m != n
+False
+O = [1, 2, 3, 4]
+n is O
+False
+#-------------Bitwise operator
+# &(and), |(or) , ^(ex-or), ~ (negation), <<(Left shift), >> (Right shift)
+11 & 15
+11
+15 | 3
+15
+201 ^ 6
+207
+~(10)
+-11
+10<< 5
+320
+10 >> 6
+0

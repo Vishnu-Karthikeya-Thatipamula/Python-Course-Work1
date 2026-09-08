@@ -1,0 +1,51 @@
+#Output_formating
+a = 10
+b = 13.5
+c = 'codgnan'
+#comma separation print( a,b,c)
+print( a,b,c)
+
+10 13.5 codgnan
+print("a = ", a , "b =", b , "c =", c)
+a =  10 b = 13.5 c = codgnan
+print("a = ", a , "b =", b , "c =", c, sep='')
+a = 10b =13.5c =codgnan
+print("a = ", a , "b =", b , "c =", c, sep= '|')
+a = |10|b =|13.5|c =|codgnan
+print("a = ", a , "b =", b , "c =", c, sep = '\n')
+a = 
+10
+b =
+13.5
+c =
+codgnan
+print("a = ", a , "b =", b , "c =", c sep = '\t')
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+print("a = ", a , "b =", b , "c =", c, sep = '\t')
+a = 	10	b =	13.5	c =	codgnan
+print("a = ", a , "b =", b , "c =", c, sep = '\n\n')
+a = 
+
+10
+
+b =
+
+13.5
+
+c =
+
+codgnan
+
+#fstring
+print(f'a= {a} b= {b} c= {c}')
+a= 10 b= 13.5 c= codgnan
+
+#formating
+print('a= {a} b= {b} c= {c}'.format(a,b,c))  
+print('a= {} b= {} c= {}'.format(a,b,c))    
+print('a = {} b= {} c= {}'.format(b,c,a))
+a = 13.5 b= codgnan c= 10
+print('a = {0} b= {1} c= {2}'.format(a,b,c))
+a = 10 b= 13.5 c= codgnan
+print('a = {2} b= {1} c= {0}'.format(a,b,c))
+a = codgnan b= 13.5 c= 10
