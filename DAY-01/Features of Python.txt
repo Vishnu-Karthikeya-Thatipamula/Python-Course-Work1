@@ -1,0 +1,11 @@
+Features of Python:
+First of all python supports both Procedural and Object Oriented Programming:
+->Procedural programmming: It is paradigm based programmming named as procedures.
+This process are static irrespective of whoever is interacting with it.
+->Object Oriented Programming: It is a type of programming which is dynamic with respective of object which is interacting with it.
+->Class: Collection Member functions and attributes, Which is a template or a blueprint for required process.
+->Object: It is the instance of the class.
+->Encapsulation: It is method of securing data at different levels of application.
+->Abstraction: Hiding the unneccessary complexity.
+->Polymorphism: Single Entity with diferent behaviour.
+->Inheritance: Aquiring the qualities of parent class to child class.
