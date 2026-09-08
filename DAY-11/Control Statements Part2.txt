@@ -1,0 +1,129 @@
+3.elif ladder is 2 conditons elif cond 1: , if cond2 , else with 3 actions
+            Syntax: elif cond1:
+                         #stms1 
+                    if   cond2:
+                        #stms2 
+                    else:
+                        #stms3
+
+            example1:
+            #else-if-ladder application
+                Budget = float(input("Enter your budget: "))
+                if Budget >= 10000.0:
+                    print("Trip.")
+                elif Budget >= 5000.0:
+                    print("stay at resort.")
+                elif Budget >= 3000.0:
+                    print("Movie and dinner.")
+                elif Budget >= 1000.0:
+                    print("Cafe and shopping.")
+                elif Budget >= 500.0:
+                    print("Street and Park Visiting.")
+                else:
+                    print("Stay at home.")
+            
+            '''#application2
+                hr =int(input("Enter the Time: "))
+                if 5<= hr <= 11:
+                    print("Good Morning!")
+                elif 12<= hr <= 16:
+                    print("Good Afternoon!")
+                elif 17<= hr <= 20:
+                    print("Good Evening!")
+                elif 21<= hr <= 24:
+                    print("Good Night!")
+                else:
+                    print("Midnight! Sleep well!!!")
+                '''
+
+                #application3
+                Budget = int(input("Enter your Hostiger-budget: "))
+                if Budget >= 10000:
+                    print("Cloud Hosting.")
+                elif Budget >= 5000:
+                    print("Business Hosting.")
+                elif Budget >= 2000:
+                    print("Premium Hosting.")
+                else:
+                    print("Single Hosting.")
+
+
+
+
+4.Nested if conditional Statements containing conditional Statements with there respective no of actions.
+            Syntax: if cond1:
+                       if cond2:
+                          #stmst1
+                       else:
+                          #stms2 
+
+            example:
+            '''fa= eval(input("Follows Accounts:"))
+                if fa:
+                    cf = eval(input("Close Accounts:"))
+                    if cf:
+                        print("show story.")
+                    else:
+                        print("UR not a close friend.")
+                else:
+                    print("Follow me to see my story.")
+                '''
+                '''
+                reg = eval(input("Are you a registered user? (True/False): "))
+                if reg:
+                    Fee = eval(input("Have U done with Ur Fee? (True/False): "))
+                    if Fee:
+                        print("Enter the Tournament.")
+                    else:
+                        print("Please Clear your dues to access your account.")
+                else:
+                    print("Please register to access your account.")
+                '''
+                """
+                Link = eval(input("Check whether the link is active: (True/False): "))
+                if Link:
+                    print("Link is active.")
+                    permission = eval(input("Do you have permission to access the link? (True/False): "))
+                    if permission:
+                        print("You can access the link.")
+                    else:
+                        print("You don't have permission to access the link.")
+                else:
+                    print("Link is inactive. Please check the link or contact the administrator.")
+                """
+
+                data = {
+                    'Vishnu': {'statue': True, 'Python': 90, 'My_SQL': 80, 'Flask': 98},
+                    'Danush': {'statue': False, 'Python': None, 'My_SQL': None, 'Flask': None},
+                    'Ramesh': {'statue': True, 'Python': 85, 'My_SQL': 75, 'Flask': 90},
+                    'Suresh': {'statue': True, 'Python': 95, 'My_SQL': 88, 'Flask': 92},
+                    'Anil': {'statue': False, 'Python': None, 'My_SQL': None, 'Flask': None},
+                    'Kalyan': {'statue': True, 'Python': 80, 'My_SQL': 70, 'Flask': 85},
+                    'Shiva': {'statue': True, 'Python': 45, 'My_SQL': 40, 'Flask': 55},
+                }
+
+                name = input("Enter the name of the student: ")
+                if name in data:
+                    student_data = data[name]
+                    if student_data['statue']:
+                        print(f"{name} is a registered student.")
+                        print(f"Hello {name.upper()}, Your scores are:")
+                        print(f"Python marks: {student_data['Python']}")
+                        print(f"My_SQL marks: {student_data['My_SQL']}")
+                        print(f"Flask marks: {student_data['Flask']}")
+                        sumGPA = (data[name]['Python'] + data[name]['My_SQL'] + data[name]['Flask'])/3
+                        print(f"Total GPA: {sumGPA}")
+                        if sumGPA >= 90:
+                            print("Outstanding performance! Keep up the excellent work.")
+                        elif sumGPA >= 80:
+                            print("Great job! You're doing well.")
+                        elif sumGPA >= 70:
+                            print("Good work! Keep striving for improvement.")
+                        elif sumGPA >= 35:
+                            print("Better luck next time!")
+                        else:
+                            print("You are failed. Don't give up!")
+                    else:
+                        print(f"{name} is not a appeared student.")
+                else:
+                    print(f"{name} is not a registered student.")
