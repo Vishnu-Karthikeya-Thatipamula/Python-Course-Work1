@@ -1,0 +1,65 @@
+Object-Oriented Programming (OOP) in Python is all about structuring code around "objects" rather than just isolated functions.
+ If you are used to building out complex systems with attribute sets and actor components, Python's OOP will feel very familiar, 
+ just with a slightly different syntax! Whenever there is a real-world application of unique users acessing the same function, 
+ which updates there overall function it is basically Object Oriented programming  
+
+Here is a breakdown of the four core pillars of OOP in Python, using a character system as a practical example.
+
+### 1. Classes and Objects (The Blueprints)
+
+A **Class** is the blueprint, and an **Object** is the actual instance spawned into the program's memory. In Python, you use the `__init__` method (the constructor) to set up the initial state, and `self` to refer to the specific instance.
+
+
+### 2. Inheritance (Extending Logic)
+
+Inheritance allows a new class to inherit attributes and methods from an existing class. This saves you from rewriting boilerplate code when creating specialized variations.
+
+
+### 3. Encapsulation (Protecting Data)
+
+Encapsulation restricts direct access to certain variables to prevent accidental modifications. In Python, you denote a private attribute by prefixing it with double underscores (`__`). You then use "getter" and "setter" methods to interact with it safely.
+
+### 4. Polymorphism (Dynamic Behavior)
+
+Polymorphism allows different classes to share the same method name but implement it differently.
+
+* A `MeleeWeapon` class might have an `attack()` method that calculates close-range damage.
+* A `RangedWeapon` class can also have an `attack()` method, but its internal logic calculates projectile trajectories.
+* You can call `attack()` on either object without worrying about its specific class.
+
+Are there any specific Python OOP concepts, like multiple inheritance or class methods (`@classmethod`), that you need to 
+review for your assessment?
+
+Attributes:
+ These are the contains which contains different types of values. Variables in class are called Atrributes.
+ There are 2 typeees of Attributes:
+ 1.Class attribute: declared in the class the with out any involvement of a object.
+ 2.Instance attribute: Attributes of object passed throught the methods.
+
+Methods :
+In Python, a method is simply a function that is bound to a class or an object. While a standard function floats freely in a 
+module, a method is always attached to a specific structural context.
+
+Python features four primary types of methods, each serving a distinct purpose in object-oriented architecture:
+
+1. Instance Methods
+These are the default, everyday methods. They operate on a specific instance of a class and must take self as their 
+first parameter to access the object's unique attributes.
+
+2. 2. Class Methods
+Class methods are bound to the class itself rather than a specific object. They take cls (the class) as their first parameter 
+instead of self. You define them using the @classmethod decorator.
+
+Purpose: Modifying class-level variables or creating "factory methods" (alternative ways to spawn an object).
+
+3.Static Methods
+Static methods do not take a mandatory self or cls parameter. They behave exactly like regular standard functions, but they 
+are housed inside a class for logical grouping. They use the @staticmethod decorator.
+
+Purpose: Utility or helper functions that relate to the class conceptually but do not need to read or write to any internal 
+class or instance data.
+
+Constructor:A function called automatically when an Object is created.
+
+
+Encapsulation:
